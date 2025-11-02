@@ -1,12 +1,98 @@
-@import "tailwindcss";
-
-
 body {
-    background-color: #F4F9FD;
-    height: 100%;
+    background-color: #171821;
+    margin: 0;
+    padding: 0;
+    font-family: "Vazirmatn", sans-serif;
 }
 
-@theme {
-    --spacing-1/8: 12.5%;
-    --color-primary: #3F8CFF;
+.container {
+    display: flex;
+}
+
+/* menu */
+.menu {
+    padding: 75px 16px 0;
+    width: 14.5%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-right: 1px solid #2C2D33;
+    height: 100vh;
+}
+
+.menuItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+
+    p {
+        color: #87888C;
+        margin: 0;
+        margin-top: 5px;
+    }
+}
+
+.menuItem:first-child {
+    background-color: #A9DFD8;
+
+    p {
+        color: #000;
+    }
+}
+
+/* Header */
+.header {
+    padding-inline: 30px;
+    padding-block: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+.inputCon {
+    position: relative;
+    width: 55%;
+
+    input {
+        width: 100%;
+        border: none;
+        background-color: #2C2D33;
+        border-radius: 14px;
+        padding-left: 40px;
+        padding-right: 12px;
+        padding-block: 14px;
+        outline: none;
+        color: #D2D2D2;
+        font-size: 16px;
+    }
+
+    svg {
+        width: 20px;
+        height: 20px;
+        color: #d2d2d2;
+        position: absolute;
+        left: 12px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.headerRight {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+
+    img {
+        width: 29px;
+        height: 29px;
+        border-radius: 100%;
+        overflow: hidden;
+        align-content: center;
+    }
 }

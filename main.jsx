@@ -1,12 +1,14 @@
-import { BrowserRouter } from "react-router-dom"
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
+import Menu from './components/Menu'
+import Header from './components/Header'
+
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+    <div className='container'>
+      <Menu />
+      <Header />
+    </div>
   </StrictMode>,
 )
