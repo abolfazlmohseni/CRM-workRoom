@@ -1,4 +1,5 @@
 import ShowLocation from "./components/ShowLocation";
+import UserCard from "./components/UserCard";
 
 const Dashboard = () => {
 
@@ -23,6 +24,30 @@ const Dashboard = () => {
 
                 </div>
             </div>
+            <section className="w-full flex gap-x-7.5 mt-7.5">
+                <div className="bg-white rounded-3xl w-2/3 py-7 px-7.5">
+                    <div className="flex items-center justify-between">
+                        <p className="text-[22px] font-bold">Workload</p>
+                        <a href="#" className="flex text-primary">
+                            <span>View all</span>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.29289 7.29289C9.65338 6.93241 10.2206 6.90468 10.6129 7.2097L10.7071 7.29289L14.7071 11.2929C15.0676 11.6534 15.0953 12.2206 14.7903 12.6129L14.7071 12.7071L10.7071 16.7071C10.3166 17.0976 9.68342 17.0976 9.29289 16.7071C8.93241 16.3466 8.90468 15.7794 9.2097 15.3871L9.29289 15.2929L12.585 12L9.29289 8.70711C8.93241 8.34662 8.90468 7.77939 9.2097 7.3871L9.29289 7.29289Z" fill="#3F8CFF" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div className="grid grid-cols-4 gap-4 mt-5">
+                        <UserCard />
+                        <UserCard />
+                        <UserCard />
+                        <UserCard />
+                        <UserCard />
+                        <UserCard />
+                        <UserCard />
+                        <UserCard />
+                    </div>
+                </div>
+                <div className="w-1/3 bg-white rounded-3xl"></div>
+            </section>
         </div>
     );
 }

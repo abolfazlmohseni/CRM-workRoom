@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+
+body {
+    background-color: #F4F9FD;
+    height: 100%;
+}
+
+@theme {
+
+    --spacing-1/8: 12.5%;
+    --spacing-7.5: 30px;
+    --color-primary: #3F8CFF;
+    --color-primary-100: #F4F9FD;
+    --color-darklight: #0A1629;
+}
