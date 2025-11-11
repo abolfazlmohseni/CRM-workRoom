@@ -10,7 +10,7 @@ const App = () => {
   return (
     <>
       {location.pathname === "/sign-in" ? <SignIn /> :
-        <div className="flex">
+        <div className="flex h-full">
           <Menu />
           <div className="w-7/8 py-5 px-[30px]">
             <Header />

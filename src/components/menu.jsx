@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Menu = () => {
     return (
-        <menu className="flex  flex-col justify-between h-screen w-1/8 ml-5 mt-5 mb-6 bg-white rounded-3xl">
+        <menu className="flex min-h-full flex-col justify-between w-1/8 ml-5 mt-5 mb-6 bg-white rounded-3xl">
             <div>
                 <Link to={"/"}>
                     <div className="mt-10 ml-6">
