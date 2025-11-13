@@ -3,6 +3,7 @@ import Header from "./components/header";
 import Menu from "./components/menu";
 import Dashboard from "./Dashboard";
 import SignIn from "./sign-in/Sign-in";
+import Nearest from "./Nearest";
 const App = () => {
 
   const location = useLocation()
@@ -17,6 +18,8 @@ const App = () => {
             <Routes>
               <Route path="/" element={<Dashboard />} />
               <Route path="/Dashboard" element={<Dashboard />} />
+              <Route path="/Nearest" element={<Nearest />} />
+
             </Routes>
           </div>
         </div>
