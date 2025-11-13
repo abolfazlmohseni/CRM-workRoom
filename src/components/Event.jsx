@@ -1,6 +1,6 @@
-const Event = ({ color, title, date, time, arrow }) => {
+const Event = ({ color, title, date, time, arrow, addClass = "" }) => {
     return (
-        <div className="flex gap-4 py-1.5">
+        <div className={`flex gap-4 py-1.5  ${addClass}`}>
             <div className={`w-1 h-full ${color} rounded-full`} ></div>
             <div className="w-full">
                 <div className="w-full flex items-center justify-between">

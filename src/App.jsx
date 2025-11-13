@@ -3,6 +3,7 @@ import Header from "./components/header";
 import Menu from "./components/menu";
 import Dashboard from "./Dashboard";
 import SignIn from "./sign-in/Sign-in";
+import Nearest from "./Nearest";
 const App = () => {
 
   const location = useLocation()
@@ -10,13 +11,15 @@ const App = () => {
   return (
     <>
       {location.pathname === "/sign-in" ? <SignIn /> :
-        <div className="flex">
+        <div className="flex h-full">
           <Menu />
           <div className="w-7/8 py-5 px-[30px]">
             <Header />
             <Routes>
               <Route path="/" element={<Dashboard />} />
               <Route path="/Dashboard" element={<Dashboard />} />
+              <Route path="/Nearest" element={<Nearest />} />
+
             </Routes>
           </div>
         </div>
