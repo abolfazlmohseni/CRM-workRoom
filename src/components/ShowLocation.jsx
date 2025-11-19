@@ -8,9 +8,9 @@ const ShowLocation = () => {
         <>
 
             {
-                pathname == null ? <h1 className="text-3xl font-medium">Dashboard</h1>
+                pathname == null ? <h1 className="text-3xl font-bold">Dashboard</h1>
 
-                    : <h1 className="text-3xl font-medium">{pathname.slice(1)}</h1>
+                    : <h1 className="text-3xl font-bold">{pathname.slice(1)}</h1>
             }
 
         </>
