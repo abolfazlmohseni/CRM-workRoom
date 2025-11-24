@@ -1,0 +1,148 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "Abolfazl Mohseni",
+            "stak": "front-end developer",
+            "level": "Junior",
+            "src": "https://i.pravatar.cc/150?img=1"
+        },
+        {
+            "id": 2,
+            "name": "Moein Hakim",
+            "stak": "back-end developer",
+            "level": "Mid-level",
+            "src": "https://i.pravatar.cc/150?img=2"
+        },
+        {
+            "id": 3,
+            "name": "Sara Khadem",
+            "stak": "UI/UX designer",
+            "level": "Senior",
+            "src": "https://i.pravatar.cc/150?img=3"
+        },
+        {
+            "id": 4,
+            "name": "Reza Karimi",
+            "stak": "full-stack developer",
+            "level": "Junior",
+            "src": "https://i.pravatar.cc/150?img=4"
+        },
+        {
+            "id": 5,
+            "name": "Niloofar Safari",
+            "stak": "product manager",
+            "level": "Senior",
+            "src": "https://i.pravatar.cc/150?img=5"
+        },
+        {
+            "id": 6,
+            "name": "Amir Hossein Jalali",
+            "stak": "devops engineer",
+            "level": "Mid-level",
+            "src": "https://i.pravatar.cc/150?img=6"
+        },
+        {
+            "id": 7,
+            "name": "Parsa Amjadi",
+            "stak": "mobile developer",
+            "level": "Junior",
+            "src": "https://i.pravatar.cc/150?img=7"
+        },
+        {
+            "id": 8,
+            "name": "Fatemeh Rouhani",
+            "stak": "QA tester",
+            "level": "Mid-level",
+            "src": "https://i.pravatar.cc/150?img=8"
+        },
+        {
+            "id": 9,
+            "name": "Yasin Ranjbar",
+            "stak": "cyber security",
+            "level": "Senior",
+            "src": "https://i.pravatar.cc/150?img=9"
+        },
+        {
+            "id": 10,
+            "name": "Hana Shokri",
+            "stak": "data analyst",
+            "level": "Junior",
+            "src": "https://i.pravatar.cc/150?img=10"
+        }
+    ],
+    "tasks": [
+        {
+            "id": 1,
+            "taskName": "Research",
+            "Estimate": "2d 4h",
+            "SpentTime": "1d 2h",
+            "Assignee": "https://i.pravatar.cc/150?img=7",
+            "Priority": "Medium",
+            "status": "Done"
+        },
+        {
+            "id": 2,
+            "taskName": "Design Homepage",
+            "Estimate": "1d 6h",
+            "SpentTime": "5h",
+            "Assignee": "https://i.pravatar.cc/150?img=3",
+            "Priority": "High",
+            "status": "In Progress"
+        },
+        {
+            "id": 3,
+            "taskName": "Fix Login Bug",
+            "Estimate": "6h",
+            "SpentTime": "2h",
+            "Assignee": "https://i.pravatar.cc/150?img=12",
+            "Priority": "Low",
+            "status": "To Do"
+        },
+        {
+            "id": 4,
+            "taskName": "API Integration",
+            "Estimate": "3d",
+            "SpentTime": "1d",
+            "Assignee": "https://i.pravatar.cc/150?img=5",
+            "Priority": "Medium",
+            "status": "In Progress"
+        },
+        {
+            "id": 5,
+            "taskName": "Write Documentation",
+            "Estimate": "1d",
+            "SpentTime": "3h",
+            "Assignee": "https://i.pravatar.cc/150?img=8",
+            "Priority": "Low",
+            "status": "To Do"
+        },
+        {
+            "id": 6,
+            "taskName": "Create Dashboard UI",
+            "Estimate": "2d",
+            "SpentTime": "10h",
+            "Assignee": "https://i.pravatar.cc/150?img=10",
+            "Priority": "High",
+            "status": "Done"
+        },
+        {
+            "id": 7,
+            "taskName": "Optimize Performance",
+            "Estimate": "1d 4h",
+            "SpentTime": "4h",
+            "Assignee": "https://i.pravatar.cc/150?img=4",
+            "Priority": "Medium",
+            "status": "In Review"
+        },
+        {
+            "id": 8,
+            "taskName": "Testing",
+            "Estimate": "1d",
+            "SpentTime": "30m",
+            "Assignee": "https://i.pravatar.cc/150?img=9",
+            "Priority": "High",
+            "status": "To Do"
+        }
+    ]
+}

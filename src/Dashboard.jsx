@@ -2,12 +2,27 @@ import ShowLocation from "./components/ShowLocation";
 import UserCard from "./components/UserCard";
 import Event from "./components/Event";
 import Project from "./components/Project";
+import { useEffect, useState } from "react";
 const Dashboard = () => {
-
     const date = new Date()
     const nextMonth = new Date(date);
     nextMonth.setMonth(date.getMonth() + 1);
     const nextMonthName = nextMonth.toLocaleString("en-US", { month: "short" });
+    const [users, setUsers] = useState([]);
+    useEffect(() => {
+        const getTopUser = async () => {
+            try {
+                const res = await fetch("http://localhost:3000/users?_start=1&_limit=8")
+                const data = await res.json()
+                setUsers(data)
+            } catch (err) {
+                console.log(err);
+            }
+        }
+        getTopUser()
+    }, []);
+
+
     return (
 
         <div className="mt-12">
@@ -38,14 +53,11 @@ const Dashboard = () => {
                         </a>
                     </div>
                     <div className="grid grid-cols-4 gap-4 mt-5">
-                        <UserCard name={"Abolfazl Mohseni"} stak={"front-End developer"} level={"Junior"} />
-                        <UserCard name={"Abolfazl Mohseni"} stak={"front-End developer"} level={"Junior"} />
-                        <UserCard name={"Abolfazl Mohseni"} stak={"front-End developer"} level={"Junior"} />
-                        <UserCard name={"Abolfazl Mohseni"} stak={"front-End developer"} level={"Junior"} />
-                        <UserCard name={"Abolfazl Mohseni"} stak={"front-End developer"} level={"Junior"} />
-                        <UserCard name={"Abolfazl Mohseni"} stak={"front-End developer"} level={"Junior"} />
-                        <UserCard name={"Abolfazl Mohseni"} stak={"front-End developer"} level={"Junior"} />
-                        <UserCard name={"Abolfazl Mohseni"} stak={"front-End developer"} level={"Junior"} />
+                        {
+                            users.map(user => {
+                                return <UserCard level={user.level} name={user.name} stak={user.stak} src={user.src} />
+                            })
+                        }
                     </div>
                 </div>
                 <div className="w-1/3 flex flex-col gap-y-6 bg-white rounded-3xl py-7 px-7.5">
