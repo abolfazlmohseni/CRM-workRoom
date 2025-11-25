@@ -5,6 +5,7 @@ import Dashboard from "./Dashboard";
 import SignIn from "./sign-in/Sign-in";
 import Nearest from "./Nearest";
 import Projects from "./Projects";
+import Profile from "./Profile";
 const App = () => {
 
   const location = useLocation()
@@ -21,6 +22,7 @@ const App = () => {
               <Route path="/Dashboard" element={<Dashboard />} />
               <Route path="/Nearest" element={<Nearest />} />
               <Route path="/Projects" element={<Projects />} />
+              <Route path="/Profile" element={<Profile />} />
 
             </Routes>
           </div>
