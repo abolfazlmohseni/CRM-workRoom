@@ -12,7 +12,7 @@ const Dashboard = () => {
     useEffect(() => {
         const getTopUser = async () => {
             try {
-                const res = await fetch("http://localhost:3000/users?_start=1&_limit=8")
+                const res = await fetch("http://localhost:3000/users?_start=0&_limit=8")
                 const data = await res.json()
                 setUsers(data)
             } catch (err) {
@@ -26,7 +26,7 @@ const Dashboard = () => {
     return (
 
         <div className="mt-12">
-            <p>Welcome back, abolfazl!</p>
+            <p>Welcome back, {users.length > 1 && users[0].name}!</p>
             <div className="mt-2.5 flex justify-between w-full">
                 <ShowLocation />
                 <div className="flex items-center gap-x-3 rounded-[14px] bg-slate-200 px-3.5 py-3">

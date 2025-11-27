@@ -5,7 +5,7 @@
             "name": "Abolfazl Mohseni",
             "stak": "front-end developer",
             "level": "Junior",
-            "src": "https://i.pravatar.cc/150?img=1"
+            "src": "./src/assets/imags/userprofile.jpg"
         },
         {
             "id": 2,
